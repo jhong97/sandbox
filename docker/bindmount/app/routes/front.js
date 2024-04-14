@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
 });
 
 // POST - Destroy todo item
-router.post('/todo/destroy', async (req, res) => {
+router.post('/todo/random', async (req, res) => {
     const taskKey = req.body._key;
     const err = await Todo.findOneAndRemove({_id: taskKey})
     res.redirect('/');

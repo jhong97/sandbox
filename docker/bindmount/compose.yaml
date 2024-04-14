@@ -15,8 +15,7 @@ services:
     links:
       - todo-database
     volumes: 
-      - ./app:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./app/views:/usr/src/app/views
     ports:
       - 3001:3001
 
